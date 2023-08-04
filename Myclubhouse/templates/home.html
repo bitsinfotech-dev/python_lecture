@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <head>
+        <style>
+            ul{
+                list-style: none;
+            }
+            li{
+                background-color: aquamarine;
+                color: orange;
+                font-size: 22px;
+            }
+        </style>
+    </head>
+</head>
+<body>
+    <header>
+        <a href="/about" target="_blank" >About</a>
+    </header>
+    <main>
+        <ul>
+            {% for a in fruits %}
+                {% if a == "banana" %}
+                    <li>{{a}}</li>
+                {% endif %}
+            {% endfor %}
+          </ul>
+    </main>
+    <footer></footer>
+</body>
+</html>
